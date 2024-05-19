@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styles"  href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="styles.css">                                                                                                          
+    <title>my_weather_app</title>
+</head> 
+<body>
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" name="searchBox" id="searchBox" placeholder="input your location">
+            <button class="fa-solid fa-magnifying-glass" onclick="fetchWeather()"> 
+                
+            </button>
+
+        </div>
+        <div class="not-found">
+            <img src="img2.jpeg">
+            <p>location not found</p>
+            
+        </div>
+
+        <div class="weather-box">
+            <img src="imgUr">
+            <p class="temperature"></p>
+            <p class="description"></p> 
+        </div>
+        
+        <div id="weather-details">
+          
+            
+
+            
+        </div> 
+        
+
+    </div>
+<script src="https://kit.fontawesome.com/9e62b4c27d.js" crossorigin="anonymous">
+    
+</script>
+    <script src="main.js"></script>
+</body>
+</html>
