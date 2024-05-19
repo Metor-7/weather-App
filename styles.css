@@ -11,7 +11,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: steelblue; 
+    background-image:url(img3.jpg) ; 
+
+
+
 
 }
 
@@ -19,12 +22,15 @@ body{
     position: relative;
     width: 400px;
     height: 105px;
-    background: #fff;
+    background: transparent;
     padding: 28px 32px;
     overflow: hidden;
+    border: 1px solid black;
     border-radius: 18px;
     font-family:  'Roboto', sans-serif;
     transition: 0.6s ease-out;
+    color: #dff6ff;
+    backdrop-filter: blur(7px);
 }
 .search-box{
     width: 100%;
@@ -32,22 +38,24 @@ body{
     display: flex;
     align-items:center;
     justify-content: space-between;
+    background-color: transparent;
 
 }
 .search-box input{
-    color: #06283d;
+    color: #dff6ff;
     width: 80%;
     font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
     padding-left: 32px;
+    background-color: transparent;
 
 
 }
 .search-box input::placeholder{
     font-size: 20px;
     font-weight: 500;
-    color: #06283d;
+    color: #dededd;
      text-transform: capitalize;
 
 
@@ -57,21 +65,21 @@ body{
     width: 50px;
     height: 50px;
     color: #06283d;
-    background: #dff6ff;
+    background: #a4afb4;
     border-radius: 50%; 
     font-size: 22px;
     transition: 0.4s ease;
 }
 
 .search-box button:hover{
-    color: #fff;
+    color: #1e1717;
     background: #06283d;
 
 }
 .search-box i{
     position: absolute;
-    color: #06283d;
-    font: size 28px;  
+    color: red;
+    /* size-adjust: 70px;   */
     
 }
 
@@ -106,16 +114,16 @@ body{
     font-weight: 500;
     text-transform: capitalize;
 }
- .weather-details{
+ #weather-details{
     width: 100%;
     display: flex;
     
    justify-content: space-between; 
-   margin-top:30px;
+   margin-top:50%;
  
 }
 
-.weather-details .humidity, .weather-details .wind{
+ #humidity, #wind{
    display: flex; 
    align-items: center;
    width: 50px;
@@ -123,32 +131,32 @@ body{
 
 }
 
-.weather-details .humidity{
+ #humidity{
     padding-left: 20px;
     justify-content: flex-start;
 }
 
-.weather-details .wind{
+#wind{
     padding-right: 20px;
     justify-content: flex-end;
 }
 
-.weather-details i{
-    color: #06283d;
+#weather-details i{
+    color: #dededd;
     font-size: 26px;
     margin-right: 10px;
     margin-top: 6px;
 
 }
 
-.weather-details span{
+#weather-details span{
     color: #06283d;
     font-size: 22px;
     font-weight: 500;
 }
 
-.weather-details p{
-    color: #06283d;
+#weather-details p{
+    color: #dededd;
     font-size: 14px;
     font-weight: 500;
 
@@ -174,7 +182,7 @@ body{
     margin-top: 12px;
 }
 
-.weather-box, .weather-details{
+.weather-box, #weather-details{
     scale: 0;
     opacity: 0;
 }
